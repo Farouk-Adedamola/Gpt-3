@@ -15,7 +15,6 @@ import {
 function App() {
   return (
     <Fragment>
-      {/* <Home /> */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<SharedLayout />}>

@@ -36,5 +36,6 @@ export const second = [
     id: 7,
     title: "sign up",
     path: "signup",
+    CSS: { background: "#FF4820", padding: "16px 45px" },
   },
 ];
