@@ -3,5 +3,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
+  /* text-fill-color: transparent; */
+}
+
+@media screen and (min-width: 1200px) {
+  .hero_section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
