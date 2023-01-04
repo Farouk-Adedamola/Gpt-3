@@ -43,7 +43,6 @@ const Hero = () => {
             })}
           </div>
         </div>
-
         <div className={classes.hero_bottom}>
           <img src={robot} alt="img" />
         </div>

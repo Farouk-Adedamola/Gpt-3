@@ -3,12 +3,28 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  /* text-fill-color: transparent; */
+}
+
+.hero_bottom img {
+  width: 80vw;
 }
 
 @media screen and (min-width: 1200px) {
   .hero_section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero_top {
+    width: 40vw;
+  }
+
+  .hero_bottom {
+    width: 50vw;
+  }
+
+  .hero_bottom img {
+    width: 50vw;
+    height: 700px;
   }
 }
