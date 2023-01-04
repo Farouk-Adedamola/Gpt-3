@@ -1,0 +1,47 @@
+.gpt__container {
+  width: 95vw;
+  background: -moz-radial-gradient(
+    circle at 10% 20%,
+    rgba(27, 120, 222, 1) 0%,
+    rgba(15, 66, 121, 1) 18%,
+    rgba(15, 66, 121, 1) 75%,
+    rgba(27, 120, 222, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle at 10% 20%,
+    rgba(27, 120, 222, 1) 0%,
+    rgba(15, 66, 121, 1) 18%,
+    rgba(15, 66, 121, 1) 75%,
+    rgba(27, 120, 222, 1) 100%
+  );
+  background: -o-radial-gradient(
+    circle at 10% 20%,
+    rgba(27, 120, 222, 1) 0%,
+    rgba(15, 66, 121, 1) 18%,
+    rgba(15, 66, 121, 1) 75%,
+    rgba(27, 120, 222, 1) 100%
+  );
+  background: -ms-radial-gradient(
+    circle at 10% 20%,
+    rgba(27, 120, 222, 1) 0%,
+    rgba(15, 66, 121, 1) 18%,
+    rgba(15, 66, 121, 1) 75%,
+    rgba(27, 120, 222, 1) 100%
+  );
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(27, 120, 222, 1) 0%,
+    rgba(15, 66, 121, 1) 18%,
+    rgba(15, 66, 121, 1) 75%,
+    rgba(27, 120, 222, 1) 100%
+  );
+  margin: 0 auto;
+}
+
+.gpt__overline {
+  width: 38px;
+  height: 3px;
+  background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%),
+    #ffffff;
+  margin-bottom: 0;
+}
