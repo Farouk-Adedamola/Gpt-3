@@ -1,4 +1,5 @@
 .gpt__container {
+  padding: 1.5rem 0;
   width: 95vw;
   background: -moz-radial-gradient(
     circle at 10% 20%,
@@ -38,10 +39,127 @@
   margin: 0 auto;
 }
 
+.gpt__main {
+  margin-left: 1rem;
+}
+
 .gpt__overline {
   width: 38px;
   height: 3px;
   background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%),
     #ffffff;
   margin-bottom: 0;
+}
+
+.gpt__main__container h1,
+.gpt__child__container h1 {
+  font-size: 24px;
+  font-family: manrope;
+  color: #fff;
+  font-weight: 800;
+}
+
+.gpt__main__container p,
+.gpt__child__container p {
+  font-family: manrope;
+  font-size: 16px;
+  color: #81afdd;
+  font-weight: 500;
+}
+
+/* explore section */
+
+.gpt__explore {
+  margin-left: 1rem;
+}
+
+.gpt__explore h1 {
+  background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%),
+    #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 34px;
+}
+
+.gpt__explore__link {
+  color: #ff8a71;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: manrope;
+}
+
+.gpt__child {
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .gpt {
+    display: flex;
+    justify-content: center;
+    width: 68vw;
+    margin: 0 auto;
+  }
+
+  .gpt__container {
+    padding: 42px 41px;
+  }
+
+  .gpt__main__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .gpt__main__container__title,
+  .gpt__child__container__title {
+    width: 23vw;
+  }
+
+  .gpt__main__container > p {
+    width: 45vw;
+    font-size: 13px;
+  }
+
+  .gpt__child__container > p {
+    font-size: 13px;
+  }
+
+  /* explore */
+  .gpt__explore {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .gpt__explore h1 {
+    width: 40vw;
+  }
+
+  .gpt__child {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gpt__container {
+    padding: 62px 61px;
+  }
+  .gpt__main__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .gpt__main__container__title {
+  }
+
+  .gpt__main__container > p {
+    font-size: 16px;
+  }
+  .gpt__child__container > p {
+    font-size: 16px;
+  }
 }
