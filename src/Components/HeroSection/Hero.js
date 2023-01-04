@@ -21,7 +21,7 @@ const Hero = () => {
             alteration boisterous the attachment. Party we years to order allow
             asked of.
           </p>
-          <form onClick={submitHandler}>
+          <form onClick={submitHandler} className={classes.form}>
             <input
               type="text"
               onChange={(e) => setText(e.target.value)}
@@ -29,18 +29,20 @@ const Hero = () => {
             />
             <button type="submit">Get Started</button>
           </form>
-          <div className={classes.persons}>
-            {persons.map((person) => {
-              const { id, img } = person;
-              return (
-                <div>
-                  <div key={id}>
-                    <img src={img} alt="img" />
+          <div className={classes.persons__parent}>
+            <div className={classes.persons}>
+              {persons.map((person) => {
+                const { id, img, CSS } = person;
+                return (
+                  <div key={id} className={classes.persons__img_container}>
+                    <img src={img} style={CSS} alt="img" />
                   </div>
-                  <p>1,600 people requested access a visit in last 24 hours</p>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
+            <p className={classes.persons_text}>
+              1,600 people requested access a visit in last 24 hours
+            </p>
           </div>
         </div>
         <div className={classes.hero_bottom}>
