@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { futureList } from "./Futuredata";
 import classes from "./Future.module.css";
 import { Link } from "react-router-dom";
+import MyApps from "../MyApps/MyApps";
 
 const Future = () => {
   return (
@@ -33,6 +34,7 @@ const Future = () => {
           </div>
         </div>
       </section>
+      <MyApps />
     </Fragment>
   );
 };
