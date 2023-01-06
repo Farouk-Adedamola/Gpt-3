@@ -14,7 +14,7 @@ const Home = () => {
         <div className={classes.home__section__one}>
           <Navigation />
           <Companies />
-          <Gpt />
+          {/* <Gpt />w */}
         </div>
         <div className={classes.home__section__future}>
           <Future />

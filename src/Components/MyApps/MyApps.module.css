@@ -39,3 +39,64 @@ p {
 }
 
 /* Media screens to be fixed later */
+
+@media screen and (min-width: 1000px) {
+  .myapps__section {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section__one {
+    width: 40vw;
+  }
+
+  .section__one img {
+    width: 40vw;
+  }
+
+  .section__two {
+    width: 40vw;
+    transform: translateY(3rem);
+  }
+
+  .links,
+  .change {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: 800;
+    width: 40vw;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 23px;
+    width: 40vw;
+  }
+
+  .links {
+    /* margin-top: 0; */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section__two {
+    padding-left: 2rem;
+  }
+  h1 {
+    font-size: 34px;
+    width: 30vw;
+  }
+
+  p {
+    width: 35vw;
+  }
+}

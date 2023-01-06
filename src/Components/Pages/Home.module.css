@@ -65,21 +65,24 @@
 
 @media screen and (min-width: 760px) {
   .home__section__one,
-  .home__section__future {
+  .home__section__future,
+  .section__two {
     padding: 20px 20px;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .home__section__one,
-  .home__section__future {
+  .home__section__future,
+  .section__two {
     padding: 20px 80px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .home__section__one,
-  .home__section__future {
+  .home__section__future,
+  .section__two {
     padding: 35px 135px;
   }
 }

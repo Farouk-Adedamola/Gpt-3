@@ -161,11 +161,12 @@
 
   .hero_top h1 {
     font-size: 52px;
+    width: 45vw;
   }
 
   .hero_top > p {
     font-size: 20px;
-    width: 37vw;
+    width: 38vw;
   }
 
   .hero_bottom {
