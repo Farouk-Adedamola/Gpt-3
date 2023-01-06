@@ -1,0 +1,41 @@
+.myapps__section {
+  width: 90vw;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+  font-family: manrope;
+}
+
+.section__one img {
+  width: 85vw;
+}
+
+.section__two {
+  margin: 2rem 0 2rem 0;
+}
+
+.links,
+.change {
+  text-decoration: none;
+}
+
+.change {
+  color: #71e5ff;
+}
+
+.links {
+  color: #ff8a71;
+}
+
+h1 {
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%), #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+p {
+  color: #81afdd;
+}
+
+/* Media screens to be fixed later */
