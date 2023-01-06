@@ -1,5 +1,5 @@
 .gpt__container {
-  padding: 1.5rem 0;
+  padding: 2.5rem 0;
   width: 95vw;
   background: -moz-radial-gradient(
     circle at 10% 20%,
@@ -92,6 +92,7 @@
 
 .gpt__child {
   margin-left: 1rem;
+  padding-top: 2.5rem;
 }
 
 @media screen and (min-width: 1000px) {
@@ -131,6 +132,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 2.5rem;
   }
 
   .gpt__explore h1 {
@@ -152,8 +154,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  .gpt__main__container__title {
   }
 
   .gpt__main__container > p {

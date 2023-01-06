@@ -1,4 +1,4 @@
-.home {
+.home__container {
   background: -moz-radial-gradient(
     circle at 5% 25%,
     rgba(7, 50, 95, 1) 0%,
@@ -26,20 +26,60 @@
   );
 }
 
+.home__section__future {
+  background: -moz-radial-gradient(
+    circle at 15% 50%,
+    rgba(7, 50, 95, 1) 0%,
+    rgba(0, 0, 0, 0) 38%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  background: -webkit-radial-gradient(
+    circle at 15% 50%,
+    rgba(7, 50, 95, 1) 0%,
+    rgba(0, 0, 0, 0) 38%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  background: -o-radial-gradient(
+    circle at 15% 50%,
+    rgba(7, 50, 95, 1) 0%,
+    rgba(0, 0, 0, 0) 38%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  background: -ms-radial-gradient(
+    circle at 15% 50%,
+    rgba(7, 50, 95, 1) 0%,
+    rgba(0, 0, 0, 0) 38%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  background: radial-gradient(
+    circle at 15% 50%,
+    rgba(7, 50, 95, 1) 0%,
+    rgba(0, 0, 0, 0) 38%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
 @media screen and (min-width: 760px) {
-  .home {
+  .home__section__one,
+  .home__section__future {
     padding: 20px 20px;
   }
 }
 
 @media screen and (min-width: 1000px) {
-  .home {
+  .home__section__one,
+  .home__section__future {
     padding: 20px 80px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .home {
+  .home__section__one,
+  .home__section__future {
     padding: 35px 135px;
   }
 }

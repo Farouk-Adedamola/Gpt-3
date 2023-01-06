@@ -4,15 +4,21 @@ import Navigation from "../Navigation/Navigation";
 import classes from "./Home.module.css";
 import Companies from "../FeaturedCompanies/Companies";
 import Gpt from "../WhatisGPT/Gpt";
+import Future from "../Future/Future";
 
 const Home = () => {
   return (
     <Fragment>
-      <div className={classes.home}>
-        <Navigation />
-        <Companies />
-        <Gpt />
-      </div>
+      <section className={classes.home__container}>
+        <div className={classes.home__section__one}>
+          <Navigation />
+          <Companies />
+          <Gpt />
+        </div>
+        <div className={classes.home__section__future}>
+          <Future />
+        </div>
+      </section>
     </Fragment>
   );
 };
