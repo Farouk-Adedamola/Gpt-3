@@ -5,6 +5,7 @@ import classes from "./Home.module.css";
 import Companies from "../FeaturedCompanies/Companies";
 import Gpt from "../WhatisGPT/Gpt";
 import Future from "../Future/Future";
+import MyApps from "../MyApps/MyApps";
 
 const Home = () => {
   return (
@@ -17,6 +18,9 @@ const Home = () => {
         </div>
         <div className={classes.home__section__future}>
           <Future />
+        </div>
+        <div className={classes.section__two}>
+          <MyApps />
         </div>
       </section>
     </Fragment>
