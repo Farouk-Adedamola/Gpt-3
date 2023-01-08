@@ -1,3 +1,8 @@
+.home__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .home__container {
   background: -moz-radial-gradient(
     circle at 5% 25%,
@@ -61,6 +66,10 @@
     rgba(0, 0, 0, 0) 38%,
     rgba(0, 0, 0, 0) 100%
   );
+}
+
+.footer__section {
+  background: #031b34;
 }
 
 @media screen and (min-width: 760px) {

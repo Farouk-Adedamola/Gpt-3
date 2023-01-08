@@ -49,7 +49,7 @@
   font-weight: 800;
   color: #fff;
   margin-top: 0;
-  margin-bottom: 164px;
+  margin-bottom: 114px;
 }
 
 .links {
@@ -100,6 +100,10 @@
     width: 23vw;
   }
 
+  .blog__container h2 {
+    margin-bottom: 164px;
+  }
+
   .second__blog__container h2 {
     font-size: 15px;
     margin-bottom: 20px;
@@ -127,7 +131,6 @@
     width: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* gap: 25px; */
   }
 
   .Happening__section__container__one {

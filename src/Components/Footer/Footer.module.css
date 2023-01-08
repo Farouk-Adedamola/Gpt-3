@@ -1,0 +1,45 @@
+.footer__section {
+  padding: 2rem 3rem 3rem 2rem;
+  font-family: manrope;
+}
+
+.footer__section h1 {
+  font-size: 34px;
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+
+.footer__section button {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 2rem 3rem;
+  background: transparent;
+  border-color: #fff;
+}
+
+.first__link {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main__section__main__one {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.main__section__main__one img {
+  height: 70px;
+}
+
+.main__section__main__one p {
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
