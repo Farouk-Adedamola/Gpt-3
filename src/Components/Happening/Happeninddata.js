@@ -9,7 +9,6 @@ export const firstBlog = [
     id: 1,
     img: Blog1,
     date: new Date("January 8, 2023 23:15:30"),
-    // day: date.getDate(),
     content: "GPT-3 and Open  AI is the future. Let us exlore how it is?",
   },
 ];
