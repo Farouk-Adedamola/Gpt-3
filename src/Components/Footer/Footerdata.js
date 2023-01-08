@@ -6,7 +6,7 @@ export const footerLinks = [
     two: "Social Media",
     three: "Counters",
     four: "Contact",
-    path: "/",
+    path: "openai",
   },
   {
     id: 2,

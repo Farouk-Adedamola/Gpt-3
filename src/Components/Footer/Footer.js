@@ -16,7 +16,6 @@ const Footer = () => {
             Request Early Access
           </Link>
         </button>
-
         <main className={classes.footer__section__main}>
           <div className={classes.main__section__main__one}>
             <img src={Logo} alt="gptLogo" />
@@ -29,18 +28,20 @@ const Footer = () => {
               return (
                 <div key={id} className={classes.link__container}>
                   <p>{title}</p>
-                  <Link to={path} className={classes.links}>
-                    {one}
-                  </Link>
-                  <Link to={path} className={classes.links}>
-                    {two}
-                  </Link>
-                  <Link to={path} className={classes.links}>
-                    {three}
-                  </Link>
-                  <Link to={path} className={classes.links}>
-                    {four}
-                  </Link>
+                  <div className={classes.link__container__links}>
+                    <Link to={path} className={classes.links}>
+                      {one}
+                    </Link>
+                    <Link to={path} className={classes.links}>
+                      {two}
+                    </Link>
+                    <Link to={path} className={classes.links}>
+                      {three}
+                    </Link>
+                    <Link to={path} className={classes.links}>
+                      {four}
+                    </Link>
+                  </div>
                 </div>
               );
             })}
