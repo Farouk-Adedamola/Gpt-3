@@ -1,14 +1,15 @@
-import blog1 from "../../Assets/Images/Blog/blog50.svg";
-import blog2 from "../../Assets/Images/Blog/blog2.svg";
-import blog3 from "../../Assets/Images/Blog/blog3.svg";
-import blog4 from "../../Assets/Images/Blog/blog4.svg";
-import blog5 from "../../Assets/Images/Blog/blog5.svg";
+import Blog1 from "../../Assets/Images/Blog/Blog50.png";
+import Blog2 from "../../Assets/Images/Blog/BLlog2.png";
+import Blog3 from "../../Assets/Images/Blog/Blog3.png";
+import Blog4 from "../../Assets/Images/Blog/Blog4.png";
+import Blog5 from "../../Assets/Images/Blog/Blog5.png";
 
 export const firstBlog = [
   {
     id: 1,
-    img: blog1,
-    Date: new Date(0, 1),
+    img: Blog1,
+    date: new Date("January 8, 2023 23:15:30"),
+    // day: date.getDate(),
     content: "GPT-3 and Open  AI is the future. Let us exlore how it is?",
   },
 ];
@@ -16,27 +17,26 @@ export const firstBlog = [
 export const secondBlog = [
   {
     id: 1,
-    img: blog2,
-
-    Date: new Date(0, 1),
+    img: Blog2,
+    date: new Date("January 8, 2023 23:15:30"),
     content: "GPT-3 and Open  AI is the future. Let us exlore how it is?",
   },
   {
     id: 2,
-    img: blog3,
-    Date: new Date(0, 1),
+    img: Blog3,
+    date: new Date("January 8, 2023 23:15:30"),
     content: "GPT-3 and Open  AI is the future. Let us exlore how it is?",
   },
   {
     id: 3,
-    img: blog4,
-    Date: new Date(0, 1),
+    img: Blog4,
+    date: new Date("January 8, 2023 23:15:30"),
     content: "GPT-3 and Open  AI is the future. Let us exlore how it is?",
   },
   {
     id: 4,
-    img: blog5,
-    Date: new Date(0, 1),
+    img: Blog5,
+    date: new Date("January 8, 2023 23:15:30"),
     content: "GPT-3 and Open  AI is the future. Let us exlore how it is?",
   },
 ];

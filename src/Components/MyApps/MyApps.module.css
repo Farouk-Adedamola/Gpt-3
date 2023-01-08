@@ -26,7 +26,7 @@
   color: #ff8a71;
 }
 
-h1 {
+.section__two h1 {
   background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%), #ffffff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -34,7 +34,7 @@ h1 {
   text-fill-color: transparent;
 }
 
-p {
+.section__two p {
   color: #81afdd;
 }
 
@@ -67,7 +67,7 @@ p {
     font-weight: 500;
   }
 
-  h1 {
+  .section__two h1 {
     font-size: 30px;
     font-weight: 800;
     width: 40vw;
@@ -75,7 +75,7 @@ p {
     margin-bottom: 0;
   }
 
-  p {
+  .section__two p {
     font-size: 16px;
     font-weight: 400;
     margin-top: 23px;
@@ -91,12 +91,13 @@ p {
   .section__two {
     padding-left: 2rem;
   }
-  h1 {
+
+  .section__two h1 {
     font-size: 34px;
     width: 30vw;
   }
 
-  p {
+  .section__two p {
     width: 35vw;
   }
 }

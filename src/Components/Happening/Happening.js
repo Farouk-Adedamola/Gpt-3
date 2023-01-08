@@ -1,9 +1,23 @@
 import React, { Fragment } from "react";
 import classes from "./Happening.module.css";
 import { firstBlog, secondBlog } from "./Happeninddata";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const Happening = () => {
+  const month = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
   return (
     <Fragment>
       <section className={classes.Happening__section}>
@@ -11,14 +25,18 @@ const Happening = () => {
         <section className={classes.Happening__section__container}>
           <div className={classes.Happening__section__container__one}>
             {firstBlog.map((post) => {
-              const { id, content, Date, img } = post;
+              const { id, content, date, img } = post;
               return (
                 <div key={id} className={classes.blog}>
                   <img src={img} alt="" />
                   <div className={classes.blog__container}>
-                    <p>{Date}</p>
+                    <div>
+                      <p>{month[date.getMonth()]},</p>
+                      <p>{date.getDate()}th</p>
+                      <p>{date.getFullYear()}</p>
+                    </div>
                     <h2>{content}</h2>
-                    <Link to="/">read full article</Link>
+                    {/* <Link to="/">read full article</Link> */}
                   </div>
                 </div>
               );
