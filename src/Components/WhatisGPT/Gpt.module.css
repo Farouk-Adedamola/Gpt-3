@@ -104,14 +104,6 @@
     margin: 0 auto;
   }
 
-  .gpt__container {
-    /* padding: 42px 41px; */
-  }
-
-  .gpt__main {
-    /* width: 85vw; */
-  }
-
   .gpt__main__container {
     display: flex;
     align-items: center;
@@ -148,6 +140,10 @@
 
   .gpt__explore h1 {
     width: 40vw;
+  }
+
+  .gpt__explore p {
+    padding-right: 20px;
   }
 
   .gpt__child {

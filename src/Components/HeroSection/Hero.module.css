@@ -8,9 +8,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 4rem;
   font-family: manrope;
   font-weight: 800;
 }
@@ -19,6 +19,7 @@
   color: #81afdd;
   font-size: 16px;
   text-align: center;
+  width: 90vw;
 }
 
 .hero_bottom img {
@@ -27,18 +28,18 @@
 
 .form {
   margin-top: 3rem;
-  width: 90vw;
+  width: 70vw;
   display: flex;
   justify-content: center;
-  /* margin: 0 auto; */
-  /* height: 5vh; */
+  margin: 2rem auto;
 }
 
 .form input {
-  padding: 16px 0px 16px 12px;
+  padding: 16px 10px 16px 12px;
   background: #052d56;
   color: #3d6184;
   border: none;
+  outline: none;
   /* border: 1px solid #fff; */
   border-radius: 5px 0px 0px 5px;
   font-family: manrope;
@@ -48,6 +49,7 @@
 
 .form input:active {
   border: none;
+  outline: none;
 }
 
 .form button {
@@ -87,9 +89,16 @@
   justify-content: center;
 }
 
+@media screen and (min-width: 450px) {
+  .hero_top h1 {
+    font-size: 40px;
+  }
+}
+
 @media screen and (min-width: 760px) {
   .hero_top h1 {
     font-size: 62px;
+    padding-top: 2rem;
   }
 
   .hero_top > p {
