@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin: 4rem 0;
 }
 
@@ -11,9 +10,6 @@
   justify-content: space-around;
   align-items: flex-start;
   width: 50vw;
-}
-
-.companies__company img {
 }
 
 @media screen and (max-width: 550px) {
@@ -26,5 +22,29 @@
     height: 34px;
     mix-blend-mode: screen;
     margin-left: 8px;
+  }
+}
+
+@media screen and (min-width: 450px) {
+  .companies {
+    width: 90vw;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .companies {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 60vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .companies__container {
+    margin: 0;
+  }
+  .companies {
+    padding: 118px 0;
   }
 }
