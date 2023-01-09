@@ -80,7 +80,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   font-size: 34px;
 }
 
@@ -155,10 +154,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .gpt__container {
-    /* padding: 62px 61px; */
-  }
-
   .gpt__main__container {
     display: flex;
     align-items: center;
