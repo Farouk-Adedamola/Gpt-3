@@ -55,10 +55,10 @@ const Navigation = () => {
           <article className={classes.article} ref={linksContainerRef}>
             <ul id="links" ref={linksRef} className={classes.firstLink}>
               {nav.map((eachLink) => {
-                const { id, title, path } = eachLink;
+                const { id, title, path, CSS } = eachLink;
                 return (
                   <li key={id}>
-                    <NavLink to={path} className={classes.links}>
+                    <NavLink to={path} style={CSS} className={classes.links}>
                       {title}
                     </NavLink>
                   </li>
