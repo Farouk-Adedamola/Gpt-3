@@ -1,6 +1,14 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import classes from "./BigCta.module.css";
+import styled from "styled-components";
+
+const StyledButton = styled.button`
+  margin-top: 1rem;
+  background-color: #000;
+  border-radius: 40px;
+  padding: 12px 45px 16px 45px;
+`;
 
 const BigCta = () => {
   return (
@@ -12,11 +20,11 @@ const BigCta = () => {
           </Link>
           <h2>Register today & start exploring the endless possiblities.</h2>
         </div>
-        <button className={classes.cta__section__btn__container}>
+        <StyledButton>
           <Link to="/" className={classes.cta__section__btn}>
             Get Started
           </Link>
-        </button>
+        </StyledButton>
       </section>
     </Fragment>
   );
