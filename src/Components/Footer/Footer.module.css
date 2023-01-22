@@ -50,8 +50,6 @@
   margin-top: 2rem;
 }
 
-.link__container {
-}
 
 .link__container p {
   color: #fff;
@@ -88,7 +86,6 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 180px;
-    /* align-items: ; */
   }
 
   .main__section__main__one {
@@ -140,8 +137,6 @@
   .main__section__main__two {
     display: flex;
     justify-content: flex-end;
-
-    /* justify-content: center; */
     width: 60vw;
     gap: 5vw;
   }
