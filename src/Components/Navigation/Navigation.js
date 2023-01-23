@@ -112,7 +112,21 @@ const Navigation = () => {
                 const { id, title, path, CSS } = eachLink;
                 return (
                   <li key={id}>
-                    <NavLink to={path} style={CSS} className={classes.links}>
+                    <NavLink
+                      to={path}
+                      style={({ isActive }) => {
+                        return {
+                          border: isActive ? "3px solid #FF4820" : "none",
+                          background: isActive ? "#FFF" : "transparent",
+                          color: isActive ? "#FF4820" : "#FFF",
+                          padding: "5px 10px",
+                          textDecoration: "none",
+                          textTransform: "Capitalize",
+                          transition: "all .4s",
+                          borderRadius: "5px",
+                        };
+                      }}
+                    >
                       {title}
                     </NavLink>
                   </li>
@@ -140,3 +154,5 @@ const Navigation = () => {
 };
 
 export default Navigation;
+// style = { CSS }
+// className={classes.links}
