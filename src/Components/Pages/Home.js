@@ -1,36 +1,85 @@
 import React, { Fragment } from "react";
 import Navigation from "../Navigation/Navigation";
 // import Hero from "../HeroSection/Hero";
-import classes from "./Home.module.css";
 import Companies from "../FeaturedCompanies/Companies";
 import Gpt from "../WhatisGPT/Gpt";
 import Future from "../Future/Future";
 import BigCta from "../BigCta/BigCta";
 import Happening from "../Happening/Happening";
 import Footer from "../Footer/Footer";
+import styled from "styled-components";
+
+const HomeWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const Homecontainer = styled.div`
+  background: -moz-radial-gradient(
+    circle at 5% 25%,
+    rgba(7, 50, 95, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle at 5% 25%,
+    rgba(7, 50, 95, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+  background: -o-radial-gradient(
+    circle at 5% 25%,
+    rgba(7, 50, 95, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+  background: -ms-radial-gradient(
+    circle at 5% 25%,
+    rgba(7, 50, 95, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+  background: radial-gradient(
+    circle at 5% 25%,
+    rgba(7, 50, 95, 1) 0%,
+    rgba(4, 12, 24, 1) 100%
+  );
+`;
+
+const HomeSection = styled.div`
+  padding: 20px 20px;
+
+  @media screen and (min-width: 1000px) {
+    padding: 20px 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 35px 135px;
+  }
+`;
+
+const Footersection = styled.section`
+  background: #031b34;
+`;
 
 const Home = () => {
   return (
     <Fragment>
-      <main className={classes.home__wrapper}>
-        <section className={classes.home__container}>
-          <div className={classes.home__section__one}>
+      <HomeWrapper>
+        <Homecontainer>
+          <HomeSection>
             <Navigation />
             <Companies />
             <Gpt />
-          </div>
-          <div className={classes.home__section__future}>
+          </HomeSection>
+          <HomeSection>
             <Future />
-          </div>
-          <div className={classes.section__two}>
+          </HomeSection>
+          <HomeSection>
             <BigCta />
             <Happening />
-          </div>
-        </section>
-        <section className={classes.footer__section}>
+          </HomeSection>
+        </Homecontainer>
+        <Footersection>
           <Footer />
-        </section>
-      </main>
+        </Footersection>
+      </HomeWrapper>
     </Fragment>
   );
 };

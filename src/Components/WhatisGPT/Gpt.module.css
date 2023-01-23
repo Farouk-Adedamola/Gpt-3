@@ -1,7 +1,6 @@
 .gpt__container {
   padding: 2.5rem 0;
-  /* overflow-x: hidden; */
-  width: 95vw;
+  width: auto;
   background: -moz-radial-gradient(
     circle at 10% 20%,
     rgba(27, 120, 222, 1) 0%,
@@ -99,7 +98,6 @@
   .gpt {
     display: flex;
     justify-content: center;
-    /* width: 68vw; */
     margin: 0 auto;
   }
 
