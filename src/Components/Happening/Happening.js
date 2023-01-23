@@ -8,6 +8,9 @@ const Happeningsection = styled.section`
   width: 90vw;
   margin: 6rem auto 3rem auto;
   font-family: manrope;
+  @media screen and (min-width: 1000px) {
+    width: auto;
+  }
 `;
 
 const H1 = styled.h1`

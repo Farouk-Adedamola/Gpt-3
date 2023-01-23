@@ -18,14 +18,6 @@
 }
 
 @media screen and (min-width: 760px) {
-  .cta__section {
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 57px 37px;
-  }
-
   .cta__section__container {
     width: 400px;
   }
@@ -42,14 +34,6 @@
 }
 
 @media screen and (min-width: 1000px) {
-  .cta__section {
-    width: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 57px 37px;
-  }
-
   .cta__section__container {
     width: auto;
   }

@@ -12,6 +12,19 @@ const StyledSection = styled.section`
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10.7236px;
   padding: 1rem 0.5rem;
+  overflow-x: hidden;
+
+  @media screen and (min-width: 1000px) {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 57px 37px;
+  }
+
+  @media and (min-width: 1000px) {
+    /* padding: 57px 37px; */
+  }
 `;
 
 const StyledButton = styled.button`
