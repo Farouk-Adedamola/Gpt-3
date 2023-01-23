@@ -5,6 +5,60 @@ import menu from "../../Assets/Images/Menu.svg";
 import { NavLink } from "react-router-dom";
 import classes from "./Navigation.module.css";
 import Hero from "../HeroSection/Hero";
+import styled from "styled-components";
+
+const Container = styled.div``;
+
+const Section = styled.div`
+  @media screen and (min-width: 760px) {
+    display: flex;
+    align-items: center;
+    height: 7vw;
+    padding-right: 10px;
+  }
+`;
+
+const ImageWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  margin: 0 auto;
+  padding: 10px 0;
+  background: transparent;
+  @media screen and (min-width: 760px) {
+    width: 200px;
+    padding: 0;
+    margin: 0;
+  }
+`;
+
+const Image = styled.img`
+  width: 52.56px;
+  height: 13.02px;
+  object-fit: cover;
+`;
+
+const NavbarImage = styled.img`
+  @media screen and (min-width: 1200px) {
+    width: 62.56px;
+    height: 16.02px;
+    object-fit: cover;
+  }
+`;
+
+const ImageButton = styled.button`
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 2.5rem;
+  background: transparent;
+  cursor: pointer;
+  transition: all 1s;
+  @media screen and (min-width: 760px) {
+    display: none;
+  }
+`;
 
 const Navigation = () => {
   const [toggle, setToggle] = useState(false);
@@ -22,18 +76,18 @@ const Navigation = () => {
 
   return (
     <Fragment>
-      <div className={classes.container}>
-        <section className={classes.section}>
-          <div className={classes.image}>
-            <img src={logo} alt="logo" />
-            <button
+      <div>
+        <Section>
+          <ImageWrapper>
+            <Image src={logo} alt="logo" />
+            <ImageButton
               id="button"
               type="button"
               style={{ transition: "all .6s" }}
               onClick={() => setToggle(!toggle)}
             >
               {toggle ? (
-                <img
+                <NavbarImage
                   src={menu}
                   alt="menu"
                   style={{
@@ -44,14 +98,14 @@ const Navigation = () => {
                   }}
                 />
               ) : (
-                <img
+                <NavbarImage
                   src={menu}
                   alt="menu"
                   style={{ width: "55px", transition: "all .5s" }}
                 />
               )}
-            </button>
-          </div>
+            </ImageButton>
+          </ImageWrapper>
           <article className={classes.article} ref={linksContainerRef}>
             <ul id="links" ref={linksRef} className={classes.firstLink}>
               {nav.map((eachLink) => {
@@ -78,7 +132,7 @@ const Navigation = () => {
               })}
             </ul>
           </article>
-        </section>
+        </Section>
         <Hero />
       </div>
     </Fragment>

@@ -5,7 +5,6 @@ import styled from "styled-components";
 
 const StyledSection = styled.section`
   font-family: manrope;
-  width: 90vw;
   margin: 0 auto;
   background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
   border: 1px solid #000000;
@@ -21,9 +20,15 @@ const StyledSection = styled.section`
     align-items: center;
     padding: 57px 37px;
   }
+`;
 
-  @media and (min-width: 1000px) {
-    /* padding: 57px 37px; */
+const CtaSectionContainer = styled.div`
+  @media screen and (min-width: 760px) {
+    width: 400px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    width: auto;
   }
 `;
 
@@ -40,16 +45,30 @@ const StyledButton = styled.button`
   }
 `;
 
+const MainheaderText = styled.h1`
+  @media screen and (min-width: 760px) {
+    font-size: 20px;
+    font-weight: 800;
+    width: 400px;
+  }
+
+  @media screen and (min-width: 1000px) {
+    font-size: 24px;
+  }
+`;
+
 const BigCta = () => {
   return (
     <Fragment>
-      <StyledSection className={classes.cta__section}>
-        <div className={classes.cta__section__container}>
+      <StyledSection>
+        <CtaSectionContainer>
           <Link to="/" className={classes.cta__section__container__btn}>
             Request Early Access to Get Started
           </Link>
-          <h2>Register today & start exploring the endless possiblities.</h2>
-        </div>
+          <MainheaderText>
+            Register today & start exploring the endless possiblities.
+          </MainheaderText>
+        </CtaSectionContainer>
         <StyledButton>
           <Link to="/" className={classes.cta__section__btn}>
             Get Started

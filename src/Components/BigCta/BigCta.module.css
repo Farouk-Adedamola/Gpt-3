@@ -8,41 +8,18 @@
 }
 
 .cta__section__btn {
-  color: #000;
-}
-
-.cta__section__btn {
   color: #fff;
   font-size: 18px;
   font-weight: 700;
 }
 
 @media screen and (min-width: 760px) {
-  .cta__section__container {
-    width: 400px;
-  }
-
-  .cta__section__container__btn h2 {
-    font-size: 20px;
-    font-weight: 800;
-    width: 400px;
-  }
-
   .cta__section__btn {
     font-size: 13px;
   }
 }
 
 @media screen and (min-width: 1000px) {
-  .cta__section__container {
-    width: auto;
-  }
-
-  .cta__section__container__btn h2 {
-    font-size: 24px;
-    font-weight: 800;
-  }
-
   .cta__section__btn {
     font-size: 18px;
     font-weight: 800px;
