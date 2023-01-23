@@ -1,12 +1,27 @@
 import React, { Fragment } from "react";
 import { companies } from "./Comapnydata";
 import classes from "./Companies.module.css";
+import styled from "styled-components";
+
+const CompaniesContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+`;
+
+const StyledSection = styled.section`
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 50vw;
+`;
 
 const Companies = () => {
   return (
     <Fragment>
-      <div className={classes.companies__container}>
-        <section className={classes.companies}>
+      <CompaniesContainer className={classes.companies__container}>
+        <StyledSection className={classes.companies}>
           {companies.map((company) => {
             const { id, img } = company;
             return (
@@ -15,8 +30,8 @@ const Companies = () => {
               </div>
             );
           })}
-        </section>
-      </div>
+        </StyledSection>
+      </CompaniesContainer>
     </Fragment>
   );
 };

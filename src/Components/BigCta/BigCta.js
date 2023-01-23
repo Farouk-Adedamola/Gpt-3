@@ -3,17 +3,34 @@ import { Link } from "react-router-dom";
 import classes from "./BigCta.module.css";
 import styled from "styled-components";
 
+const StyledSection = styled.section`
+  font-family: manrope;
+  width: 90vw;
+  margin: 0 auto;
+  background: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10.7236px;
+  padding: 1rem 0.5rem;
+`;
+
 const StyledButton = styled.button`
   margin-top: 1rem;
-  background-color: #000;
-  border-radius: 40px;
+  background: #000;
+  border-radius: 20px;
   padding: 12px 45px 16px 45px;
+  transition: all 0.6s;
+  &:hover {
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+  }
 `;
 
 const BigCta = () => {
   return (
     <Fragment>
-      <section className={classes.cta__section}>
+      <StyledSection className={classes.cta__section}>
         <div className={classes.cta__section__container}>
           <Link to="/" className={classes.cta__section__container__btn}>
             Request Early Access to Get Started
@@ -25,7 +42,7 @@ const BigCta = () => {
             Get Started
           </Link>
         </StyledButton>
-      </section>
+      </StyledSection>
     </Fragment>
   );
 };
